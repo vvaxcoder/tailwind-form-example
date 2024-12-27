@@ -554,16 +554,26 @@ video {
   display: none;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.min-h-screen {
+  min-height: 100vh;
 }
 
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
+.bg-\[url\(\'wave\.svg\'\)\] {
+  background-image: url('wave.svg');
 }
 
-.underline {
-  text-decoration-line: underline;
+.bg-\[url\(\'\/wave\.svg\'\)\] {
+  background-image: url('/wave.svg');
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
