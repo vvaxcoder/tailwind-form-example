@@ -14,3 +14,6 @@ https://heroicons.com/
 
 Документация по tailwind
 https://tailwindcss.com/docs/installation
+
+для работы с формами есть неплохая библиотека tailwindcss/forms
+https://www.npmjs.com/package/@tailwindcss/forms
