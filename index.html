@@ -47,17 +47,76 @@
       </div>
 
       <!-- registration form here -->
-      <div class="bg-white/80 backdrop-blur-xl p-10 mt-10 mx-auto h-[500px] rounded-xl shadow-xl">
-        <form action="" method="get" autocomplete="off">
+      <div class="bg-white/80 backdrop-blur-xl p-10 mt-10 mx-auto rounded-xl shadow-xl max-w-md w-full">
+        <form action="" method="get" autocomplete="off" class="space-y-6">
+          <!-- name -->
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
 
-            <div class="icon-wrapper rounded-md shadow-sm mt-10">
-              <div></div>
+            <div class="relative rounded-md shadow-sm mt-1">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                </svg>                
+              </div>
 
               <div>
-                <input type="text" id="name" name="name" required class="border-gray-300 rounded-md
-                  focus:border-green-500 focus:ring-green-500 text-sm" placeholder="Sasha Gray">
+                <input type="text" id="name" name="name" required class="pl-10 border-gray-300 rounded-md
+                  focus:border-green-500 focus:ring-green-500 text-sm w-full" placeholder="Sasha Gray">
+              </div>
+            </div>
+          </div>
+
+          <!-- email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+
+            <div class="relative rounded-md shadow-sm mt-1">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>                               
+              </div>
+
+              <div>
+                <input type="email" id="email" name="email" class="pl-10 border-gray-300 rounded-md
+                  focus:border-green-500 focus:ring-green-500 text-sm w-full" placeholder="test@test.test">
+              </div>
+            </div>
+          </div>
+
+          <!-- password -->
+          <div>
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+
+            <div class="relative rounded-md shadow-sm mt-1">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                </svg>                               
+              </div>
+
+              <div>
+                <input type="password" id="password" name="password" minlength="8" class="pl-10 border-gray-300 rounded-md
+                  focus:border-green-500 focus:ring-green-500 text-sm w-full" placeholder="Minimum 8 characters">
+              </div>
+            </div>
+          </div>
+
+          <!-- confirm password -->
+          <div>
+            <label for="password_confirmation" class="block text-sm font-medium text-gray-700">Password confirmation</label>
+
+            <div class="relative rounded-md shadow-sm mt-1">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                </svg>                
+              </div>
+
+              <div>
+                <input type="password" id="password_confirmation" name="password_confirmation" minlength="8" class="pl-10 border-gray-300 rounded-md
+                  focus:border-green-500 focus:ring-green-500 text-sm w-full" placeholder="Minimum 8 characters">
               </div>
             </div>
           </div>
