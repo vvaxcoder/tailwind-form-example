@@ -6,5 +6,8 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.9"
+  },
+  "scripts": {
+    "watch_tw": "npx tailwindcss -i ./style.css -o ./output.css --watch"
   }
 }
